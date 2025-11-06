@@ -1,6 +1,6 @@
 {
   "name": "web",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "type": "module",
   "private": true,
   "scripts": {
@@ -12,9 +12,17 @@
   },
   "dependencies": {
     "@repo/ui": "workspace:*",
+    "@repo/constants": "workspace:*",
     "next": "^16.0.0",
     "react": "^19.2.0",
     "react-dom": "^19.1.0"
+  },
+  "tasks": {
+    "build": {
+      "dependsOn": [
+        "^build"
+      ]
+    }
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^15.4.6",
